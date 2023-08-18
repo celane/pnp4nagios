@@ -1,4 +1,4 @@
-**pnp-0.6.26-15 08/17/2023** lane@dchooz.org
+**pnp-0.6.27 08/18/2023** 
   * many php 8.2 fixes to remove 'deprecated' errors:
 	pre-defining class variables (instead of dynamic),
 	explicitly re-creating arrays as needed
