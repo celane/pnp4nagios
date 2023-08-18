@@ -13,6 +13,7 @@ $_LINE     = '#000000';
 #
 # Initial Logic ...
 #
+include 'arrayfix.php';
 
 foreach ($this->DS as $KEY=>$VAL) {
 
