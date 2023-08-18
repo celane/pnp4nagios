@@ -1,6 +1,6 @@
 Name:           pnp4nagios
 Version:        0.6.26
-Release:        14%{?dist}
+Release:        15%{?dist}
 Summary:        Nagios performance data analysis tool
 
 Group:          Applications/System
@@ -18,6 +18,7 @@ Requires:       rrdtool-perl
 Requires:       php >= 5.6
 Requires:       php-gd
 Requires:       php-xml
+Requires:       php-mbstring
 Requires:       systemd
 
 %description

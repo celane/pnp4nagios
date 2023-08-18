@@ -62,6 +62,10 @@ foreach ($this->DS as $KEY=>$VAL) {
 		$vlabel = $VAL['UNIT'];
 	}
 
+	if (!is_array($opt)) $opt = [];
+	if (!is_array($ds_name)) $ds_name = [];
+	if (!is_array($def)) $def = [];
+
 	$opt[$KEY] = '--vertical-label "' . $vlabel . '" --title "' . $this->MACRO['DISP_HOSTNAME'] . ' / ' . $this->MACRO['DISP_SERVICEDESC'] . '"' . $upper . $lower;
 	$ds_name[$KEY] = $VAL['LABEL'];
 	$def[$KEY]  = rrd::def     ("var1", $VAL['RRDFILE'], $VAL['DS'], "AVERAGE");

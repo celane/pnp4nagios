@@ -6,6 +6,7 @@ class Rrdtool_Model extends System_Model
 {
 
     private $RRD_CMD   = FALSE;
+    public $config = '';
     /*
     *
     *

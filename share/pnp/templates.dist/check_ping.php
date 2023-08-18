@@ -5,8 +5,11 @@
 #
 # RTA
 #
+if (!is_array($ds_name)) $ds_name = [];
 $ds_name[1] = "Round Trip Times";
+if (!is_array($opt)) $opt = [];
 $opt[1]  = "--vertical-label \"RTA\"  --title \"Ping times\" ";
+if (!is_array($def)) $def = [];
 $def[1]  =  rrd::def("var1", $RRDFILE[1], $DS[1], "AVERAGE") ;
 $def[1] .=  rrd::gradient("var1", "ff5c00", "ffdc00", "Round Trip Times", 20) ;
 $def[1] .=  rrd::gprint("var1", array("LAST", "MAX", "AVERAGE"), "%6.2lf $UNIT[1]") ;
