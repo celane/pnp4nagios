@@ -1,5 +1,12 @@
 # PNP4Nagios
 
+
+development has moved to https://github.com/pnp4nagios/pnp4nagios
+
+This repo will be eventually be removed, when I get a round tuit. 
+
+
+
 This is a fork of [@lingej's original pnp4nagios package](https://github.com/lingej/pnp4nagios).
 
 As a long-time user of `pnpnagios`, I am trying to give the project a
